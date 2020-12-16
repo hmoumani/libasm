@@ -18,7 +18,6 @@ _ft_strdup:
     call _ft_strcpy
     ret
 error:
-    error:
     push 12        ; save errno
     call ___error   ; rax is now points to external variable errno.
     pop qword[rax]  ; The QWORD PTR is just a size specifier (It means that a 64 bit value is read from the address)
