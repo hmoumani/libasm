@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hmoumani <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/16 14:27:02 by hmoumani          #+#    #+#             */
+/*   Updated: 2020/12/16 14:27:05 by hmoumani         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libasm.h"
 # define STRLEN(x) (printf("%s\nft_strlen : %lu\nstrlen : %lu\n", x, ft_strlen(x), strlen(x)))
 # define STRCMP(x, y) (printf("%s | %s\nftstrcmp : %d\nstrcmp : %d\n", x, y, ft_strcmp(x, y), strcmp(x, y)))
@@ -42,7 +54,7 @@ int     main()
 	printf("\033[0;32mft_write TEST\033[0m\n");
 	ft_write(1, "hello\n", 6);
 	fd = open("file", O_WRONLY);
-	ft_write(fd, "DGoat\n", 6);
+	ft_write(fd, "e1r13p12\n", 9);
 	if ((ft_write(-4, "hello\n", 6) == -1))
 		printf("\033[1;31mERROR: %s\033[0m\n", strerror(errno));
 	printf("%d\n", (int)ft_write(1, "hello\n", 6));
